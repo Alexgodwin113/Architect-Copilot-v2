@@ -1,6 +1,6 @@
-# [Preview] Sample Chat App with AOAI
+# [Preview] Architect Copilot - Sample Chat App
 
-This repo contains sample code for a simple chat webapp that integrates with Azure OpenAI. Note: some portions of the app use preview APIs.
+This repo contains sample code for a simple chat webapp that integrates with Azure OpenAI to assist Architects in Application Modernisation process.
 
 ## Prerequisites
 - An existing Azure OpenAI resource and model deployment of a chat model (e.g. `gpt-35-turbo-16k`, `gpt-4`)
@@ -379,6 +379,13 @@ Any custom images assigned to variables `UI_LOGO`, `UI_CHAT_LOGO` or `UI_FAVICON
 
 Feel free to fork this repository and make your own modifications to the UX or backend logic. You can modify the source (`frontend/src`). For example, you may want to change aspects of the chat display, or expose some of the settings in `app.py` in the UI for users to try out different behaviors. After your code changes, you will need to rebuild the front-end via `start.sh` or `start.cmd`.
 
+#### Further Customization Scenarios
+1. Uploading the Logo
+Upload your desired logo into frontend/src/assets
+Make changes in importing the logo to Chat.tsx file in frontend/src/pages/chat 
+Make changes in importing the logo to Layout.tsx file in frontend/src/pages/layout 
+2.Prompt Samples
+Go to the PromptSuggestions.tsx file in frontend/src/components and make changes in the example prompts functions
 ### Scalability
 You can configure the number of threads and workers in `gunicorn.conf.py`. After making a change, redeploy your app using the commands listed above.
 
