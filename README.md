@@ -381,11 +381,12 @@ Feel free to fork this repository and make your own modifications to the UX or b
 
 #### Further Customization Scenarios
 1. Uploading the Logo
-Upload your desired logo into frontend/src/assets
-Make changes in importing the logo to Chat.tsx file in frontend/src/pages/chat 
-Make changes in importing the logo to Layout.tsx file in frontend/src/pages/layout 
-2.Prompt Samples
-Go to the PromptSuggestions.tsx file in frontend/src/components and make changes in the example prompts functions
+     Upload your desired logo into **frontend/src/assets**
+     Make changes in importing the logo to Chat.tsx file in **frontend/src/pages/chat**
+     Make changes in importing the logo to Layout.tsx file in **frontend/src/pages/layout**
+2. Prompt Samples
+     Go to the PromptSuggestions.tsx file in **frontend/src/components** and make changes in the example prompts functions
+   
 ### Scalability
 You can configure the number of threads and workers in `gunicorn.conf.py`. After making a change, redeploy your app using the commands listed above.
 
@@ -426,36 +427,6 @@ We recommend keeping these best practices in mind:
 - Pull in changes from `main` frequently to ensure you have the latest bug fixes and improvements, especially when using Azure OpenAI on your data.
 
 **A note on Azure OpenAI API versions**: The application code in this repo will implement the request and response contracts for the most recent preview API version supported for Azure OpenAI.  To keep your application up-to-date as the Azure OpenAI API evolves with time, be sure to merge the latest API version update into your own application code and redeploy using the methods described in this document.
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-When contributing to this repository, please help keep the codebase clean and maintainable by running 
-the formatter and linter with `npm run format` this will run `npx eslint --fix` and `npx prettier --write` 
-on the frontebnd codebase. 
-
-If you are using VSCode, you can add the following settings to your `settings.json` to format and lint on save:
-
-```json
-{
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
-    "editor.formatOnSave": true,
-    "prettier.requireConfig": true,
-}
-```
 
 ## Trademarks
 
